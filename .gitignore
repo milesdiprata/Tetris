@@ -1,3 +1,7 @@
 tetris
-src/*.o
+object/*.o
+object/*.d
 .DS_Store
+headers/.DS_Store
+object/.DS_Store
+src/.DS_Store
