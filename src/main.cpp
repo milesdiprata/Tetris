@@ -45,7 +45,9 @@ int main(int argc, char * args[])
 				game.CurrentPiecePosY++;
 			break;
 		case SDLK_x:
-                game.DropPiece();
+		if (board.IsGameOver())
+			break;
+		game.DropPiece();
 			break;
 		case SDLK_z:
                 game.RotatePiece();
