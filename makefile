@@ -11,10 +11,19 @@ SOURCES := $(wildcard $(SRC_DIR)/*.cpp)
 OBJECTS := $(SOURCES:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 DEPS    := $(wildcard $(OBJ_DIR)/*.d)
 
-.PHONY: clean
+MKDIR_P = mkdir -p
+
+.PHONY: clean directories
+
+all: directories tetris
+
+directories: object
+
+object:
+	${MKDIR_P} object
 
 tetris: $(OBJECTS)
-	$(CC) $(LDFLAGS) $^ $(LDLIBS) -o $@
+	$(CC) $(LDFLAGS) $^ $(LDLIBS) -o $@	
 
 $(OBJECTS): $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $(OUTPUT_OPTION) $<
