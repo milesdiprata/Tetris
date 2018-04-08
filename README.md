@@ -13,9 +13,17 @@ Required external libraries:
 
 ### Mac
 
-Download SDL2-2.0.8.dmg from the link above.
+#### Install Homebrew
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# Check for success
+brew doctor
+```
 
-Extract SDL2.framework to /Library/Frameworks
+#### Instal SDL 2.0
+```
+brew install sdl2
+```
 
 ## Build & Run Game
 ```
