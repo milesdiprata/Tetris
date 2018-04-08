@@ -1,6 +1,6 @@
 INC_DIR := headers
 SRC_DIR := src
-OBJ_DIR := object
+OBJ_DIR := src
 
 CC       := g++
 CPPFLAGS := -I$(INC_DIR) -MMD -MP
