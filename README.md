@@ -7,7 +7,7 @@ Featuring the same tetromino colors as seen in Tetris DX for Game Boy color.
 
 ## Dependencies
 
-Required external libraries:
+Required external libraries for (development):
 
 + [SDL 2.0](https://www.libsdl.org/download-2.0.php)
 
@@ -20,7 +20,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew doctor
 ```
 
-#### Instal SDL 2.0
+#### Instal SDL 2.0 (Runtime)
 ```
 brew install sdl2
 ```
